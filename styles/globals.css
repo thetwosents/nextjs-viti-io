@@ -6,6 +6,26 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html body, .ant-layout {
+  background-color: #121A22 !important
+}
+
+.tile {
+  border: 2px solid #282D33;
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.tile * {
+  color: #fff;
+}
+
+html body .ant-page-header-heading-title {
+  color: #fff;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +33,86 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.ant-page-header, .ant-tabs {
+  background: #121A22 !important;
+}
+
+html body .ant-layout-header {
+  border: 1px solid #282D33;
+  border-bottom-color: #282D33 !important;
+  background-color: #121A22 !important;
+}
+
+
+
+.map-container.full {
+  height: 100vh !important;
+}
+
+.map-container {
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+}
+
+.mapboxgl-marker {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border:1px solid gray;
+  background-color:lightblue;
+}
+
+.marker-label {
+  color: #Fff;
+  text-align: center;
+  width: 100%;
+  display: block;
+  line-height: 32px;
+  font-family: NeutraBold;
+  font-size: .85rem;
+}
+
+.marker {
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  box-shadow: 0 1px 25px rgb(0 0 0 / 8%);
+  -webkit-box-shadow: 0 1px 25px rgb(0 0 0 / 8%);
+  border: 3px solid #fff;
+  opacity: 0 !important;
+}
+.marker p {
+  position: absolute;
+    bottom: 10px;
+    font-size: .65rem;
+    font-family: NeutraBold;
+    /* text-transform: uppercase; */
+    padding: 4px 8px;
+    width: 120px;
+    display: block;
+    right: 40px;
+    text-align: center;
+    color: #fff;
+    background: rgb(34,34,34);
+    /* border: 1px solid #f3bf59; */
+}
+
+.marker.show {
+  opacity: 1 !important;
+}
+
+.marker.active {
+  width: 75px;
+  height: 75px;
+  border-color: #fff;
+}
+.marker.active p {
+  display: none;
 }
